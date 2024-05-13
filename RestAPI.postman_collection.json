@@ -1,0 +1,112 @@
+{
+	"info": {
+		"_postman_id": "1f16bb52-b8b9-4e1e-a986-bfdf40ac631d",
+		"name": "RestAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "34873464"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Mobile\",\r\n    \"description\":\"description\",\r\n    \"price\":600,\r\n    \"category\":\"category\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/addproduct",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"addproduct"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:5000/readAllProducts",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"readAllProducts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Mobile11\",\r\n    \"description\":\"description\",\r\n    \"price\":5000,\r\n    \"category\":\"category\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/update/6641d810536a2774c92c851c",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"update",
+						"6641d810536a2774c92c851c"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:5000/delete/6641d810536a2774c92c851c",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"delete",
+						"6641d810536a2774c92c851c"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
